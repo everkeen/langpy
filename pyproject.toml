@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "langpy"
+version = "0.1.0"
+description = "A simple programming language-making system for Python: tokenizer, parser and interpreter building blocks."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[tool.setuptools]
+# This folder is the `langpy` package itself.
+package-dir = { "langpy" = ".", "langpy.examples" = "examples" }
+packages = ["langpy", "langpy.examples"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

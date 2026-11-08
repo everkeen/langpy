@@ -1,0 +1,12 @@
+# Python virtual environment and cache files
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+# Pytest cache files
+*.pytest_cache/
+# Wheel build files
+dist/
+build/
+*.egg-info/
