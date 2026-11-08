@@ -14,9 +14,14 @@ A language is made of three classes, each of which you can subclass:
 
 ## Install
 
-```
+Local checkout:
+```bash
 pip install -e .            # from this folder
 pip install -e .[test]      # with pytest
+```
+GitHub repo:
+```bash
+pip install git+https://github.com/everkeen/langpy.git # from the GitHub repo
 ```
 
 ## A calculator in 30 lines
